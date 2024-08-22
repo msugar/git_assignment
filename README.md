@@ -61,8 +61,23 @@ e. What is the difference between git and GitHub?
 
 f. What does git diff do?
 
-  It show changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes resulting from a merge, changes between two blob objects, or changes between two files on disk.
+	It show changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes resulting from a merge, changes between two blob objects, or changes between two files on disk.
 
-  Source: [git-diff](https://git-scm.com/docs/git-diff)
+	Source: [git-diff](https://git-scm.com/docs/git-diff)
 
+
+g. What is the main branch?
+
+	The "master" branch in Git is not a special branch. It is exactly like any other branch. The only reason nearly every repository has one is that the `git init` command creates it by default and most people don’t bother to change it.
+
+	In GitHub, that default name of that primary branch is "main" instead. Note the exact name doesn't matter much, it's more a matter of convention.
+
+	Most teams might give a special meaning to the main branch, though. Morever, usual practice is to consider main as the "approved" state, or "ready to deploy into production" configuration of the software system. But again, other teams with more complex needs might adopt different approaches, for example having one branch per major release version.
+
+	Source: [Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
+
+h. Besides our initial commit if it is a new repository, should we directly push our changes directly into the main branch?
+
+	If the repository designates 'main' as the branch containing the approved or production-ready version of the software, directly modifying this branch could introduce risks. It's advisable to utilize Git and GitHub features to safeguard against unintended alterations reaching the live environment.
 
