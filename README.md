@@ -37,3 +37,32 @@ c. How do I open up a pull request?
 	Source:[Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui) 
 
 
+d. Give me a step by step guide on how to add someone to your repository.
+
+	Steps:
+	1. Navigate to your project.
+	1. In the top-right, click to open the menu.
+	1. In the menu, click Settings to access the project settings.
+	1. Click Manage access.
+	1. Under Invite collaborators, search for the user that you want to invite.
+	1. Select the role for the collaborator. ...
+	1. Click Invite.
+
+	Source: [Managing access to your projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects)
+
+e. What is the difference between git and GitHub?
+
+	Git is an open-source version control system that intelligently tracks changes in files. Git is particularly useful when you and a group of people are all making changes to the same files at the same time.
+
+	GitHub is a cloud-based platform where you can store, share, and work together with others to write code. Collaborative working, one of GitHub’s fundamental features, is made possible by the open-source software, Git, upon which GitHub is built.
+
+	Source: [About GitHub and Git](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git)
+
+
+f. What does git diff do?
+
+  It show changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes resulting from a merge, changes between two blob objects, or changes between two files on disk.
+
+  Source: [git-diff](https://git-scm.com/docs/git-diff)
+
+
