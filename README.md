@@ -43,7 +43,7 @@ Steps to add a collaborator to a repository:
 1. Inside "Manage access", click on "Add people".
 1. In the "Add a collaborator to git" dialog window, search for the user that you want to invite, then select a name in the list of matches.
 1. [If the repository is owned by an organization] Under "Choose a role", select the repository role to grant to the person.
-1. Click "Add <NAME> to <REPOSITORY>" to confirm.
+1. Click "Add \<NAME\> to \<REPOSITORY\>" to confirm.
 
 A repository owned by a personal account has two permission levels: the repository owner and collaborators.
 
