@@ -35,18 +35,24 @@ Steps:
 Source: [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui) 
 
 
-## d. Give me a step by step guide on how to add someone to your repository.
+## d. Describe the steps to add a collaborator to a repository (share write permissions)
 
-Steps:
-1. Navigate to your project.
-1. In the top-right, click to open the menu.
-1. In the menu, click Settings to access the project settings.
-1. Click Manage access.
-1. Under Invite collaborators, search for the user that you want to invite.
-1. Select the role for the collaborator.
-1. Click Invite.
+Steps to add a collaborator to a repository:
+1. Under your repository name on GitHub, click on "Settings".
+1. In the "Access" section of the sidebar, click on "Collaborators".
+1. Inside "Manage access", click on "Add people"
+1. In the "Add a collaborator to git" dialog window, search for the user that you want to invite, then select a name in the list of matches and confirm.
 
-Source: [Managing access to your projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects)
+A repository owned by a personal account has two permission levels: the repository owner and collaborators.
+
+Collaborators on a personal repository can pull (read) the contents of the repository and push (write) changes to the repository.
+
+Note: In a private repository, repository owners can only grant write access to collaborators. Collaborators can't have read-only access to repositories owned by a personal account.
+
+Tip: If you require more granular access to a repository owned by your personal account, consider transferring the repository to an organization.
+
+Source: [Managing teams and people with access to your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
+
 
 ## e. What is the difference between git and GitHub?
 
@@ -57,14 +63,14 @@ GitHub is a cloud-based platform where you can store, share, and work together w
 Source: [About GitHub and Git](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git)
 
 
-## f. What does git diff do?
+## f. What does `git diff` do?
 
 It show changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes resulting from a merge, changes between two blob objects, or changes between two files on disk.
 
 Source: [git-diff](https://git-scm.com/docs/git-diff)
 
 
-## g. What is the main branch?
+## g. What is the `main` branch?
 
 Most teams might give a special meaning to the main branch. Usual practice is to consider main as the "approved", or "ready to deploy into production" configuration of the software system.
 
@@ -75,5 +81,11 @@ Source: [Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/
 
 ## h. Besides our initial commit if it is a new repository, should we directly push our changes directly into the main branch?
 
-If the repository designates 'main' as the branch containing the approved or production-ready version of the software, directly modifying this branch could introduce risks. It's advisable to utilize Git and GitHub features to safeguard against unintended alterations reaching the live environment.
+If 'main' is the branch containing the approved or production-ready version of the software for a repository, directly modifying this branch could introduce risks. It's advisable to utilize Git and GitHub features to safeguard against unintended alterations reaching the live environment.
+
+Examples of such features include:
+- Pre-commit hook
+- Branch protection rules
+- Feature branches
+- Pull requests
 
